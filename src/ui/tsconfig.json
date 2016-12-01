@@ -1,0 +1,18 @@
+{
+  "compilerOptions": {
+    "module": "commonjs",
+    "target": "es5",
+    "outDir": "dist",
+    "rootDir": "./",
+    "sourceMap": true,
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "moduleResolution": "node",
+    "forceConsistentCasingInFileNames": true,
+    "typeRoots": [
+      "./node_modules/@types/"
+    ]
+  },
+  "compileOnSave": false,
+  "buildOnSave": false
+}
