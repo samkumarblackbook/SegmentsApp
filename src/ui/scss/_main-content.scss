@@ -1,0 +1,85 @@
+.page-title {
+  color: $text-grey;
+  font-weight: 400;
+  font-size: 1.4rem;
+  margin: 0;
+
+  .back-btn {
+    margin-right: .9rem;
+    font-size: .9rem;
+    position: relative;
+    top: -.1rem;
+  }
+
+  .title {
+    position: relative;
+    top: .13rem;
+  }
+}
+
+
+.new-frame-btn {
+  position: relative;
+  top: .1rem;
+  padding: .2rem;
+  float: right;
+}
+
+.main-content-body {
+  min-height: 700px;
+  background: #FFF;
+  margin-top: .9rem;
+  border-top: .8rem solid $accent-blue;
+  border-radius: .7rem;
+  position: relative;
+}
+
+
+.main-content-subhead {
+  @extend .clr;
+  border-bottom: 2px solid $divider-grey;
+  padding: .5rem .5rem .2rem;
+
+  .button {
+    float: right;
+    width: 10rem;
+    position: relative;
+    top:-3px;
+  }
+}
+
+.main-content-subtitle {
+  color: $text-grey;
+  font-weight: 600;
+  font-size: 1.2rem;
+  padding-left: .5rem;
+  margin: 0px;
+  display: inline-block;
+}
+
+// .grid-frame-overflow {
+//   overflow: hidden;
+//   max-width: 100%;
+// }
+
+.main-content-form {
+  @extend .clr;
+  width: 100%;
+  min-width: 100%;
+  padding: .5rem 1.4rem 1.4rem 1.4rem;
+}
+
+.main-content-grid {
+}
+
+.bb-logo {
+  position: absolute;
+  bottom: 5px;
+  left:-6.4rem;
+  text-align: center;
+
+  img {
+    width: 5.9rem;
+  }
+
+}

@@ -1,0 +1,115 @@
+.main-header {
+  background: #FFF;
+  position: relative;
+  z-index: 1;
+}
+
+
+.main-logo {
+  background: $blue-whale;
+  display: inline-block;
+  float: left;
+  padding: 1.39rem 1rem;
+}
+
+.main-nav {
+  @extend .clr;
+  float: left;
+  padding-left: 1.5rem;
+  position: relative;
+  font-size: 1.1rem;
+  top: 2.64rem;
+
+  li {
+    float: left;
+    padding-right: 1.7rem;
+  }
+
+  .nav-item {
+    padding: .6rem 1rem;
+    font-weight: 400;
+    border-bottom: 4px solid transparent;
+    color: $text-grey;
+
+    &:hover,
+    &.active {
+      color: $accent-blue;
+      border-color: $accent-blue;
+    }
+  }
+}
+
+
+.header-profile-link {
+  float: right;
+  height: 5rem;
+
+  &.open .profile-menu,
+  &:hover .profile-menu {
+    display: block;
+    opacity: 1;
+  }
+}
+
+.profile-menu {
+  position: absolute;
+  border: 1px solid $divider-grey;
+  border-top: 3px solid $accent-blue;
+  box-shadow: 0px 1px 2px rgba(0,0,0,.6);
+  transition: opacity 200ms;
+  background: #FFF;
+  margin-top: -5px;
+  width: 140px;
+  right: 0px;
+  padding: 0px;
+  opacity: 0;
+  display: none;
+
+  &:hover {
+    display: block;
+    opacity: 1;
+  }
+
+  .profile-menu-link{
+    padding: .5rem;
+    text-align: center;
+    width: 140px;
+    display: block;
+    cursor: pointer;
+
+    &:hover {
+      color: $accent-blue;
+      background: $base-grey;
+    }
+  }
+
+  .profile-menu-item + .profile-menu-item .profile-menu-link{
+    border-top: 1px solid $divider-grey;
+  }
+}
+
+.left-menu-toggle {
+  font-size: 2rem;
+  text-align: center;
+  float: left;
+  display: inline-block;
+  padding: 1.2rem;
+  background: $cloud-burst;
+  color: #FFF;
+  cursor: pointer;
+
+  i {
+    position: relative;
+    top: .15rem;
+  }
+
+  &:hover{
+    background: $inactive-blue;
+  }
+}
+
+
+.profile-img {
+  height: 5.01rem;
+  width: auto;
+}

@@ -1,0 +1,30 @@
+$midnight-express:#162136;
+$midnight-blue:#244471;
+$blue-whale:#1E2C45;
+$accent-blue:#4085DE;
+$cloud-burst:#243450;
+$inactive-blue:#46536D;
+$base-grey:#F2F3F7;
+$text-grey:#727272;
+$icon-green:#2DAC30;
+$icon-red:#FF465A;
+$icon-yellow:#E0A21E;
+$select-base:#A4B6CF;
+$text-input:#d7e2ed;
+$text-blue:#3C4A5E;
+$divider-grey:#CDD4E2;
+$button-blue:#88B9F6;
+$button-hover:#CFE3FB;
+
+
+@mixin icomoon {
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}

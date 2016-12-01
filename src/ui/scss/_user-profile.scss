@@ -1,0 +1,35 @@
+.image-upload{
+  width: 17rem;
+  margin: auto;
+  label{
+    width: 100%;
+    cursor: pointer;
+    text-align: center;
+    i{
+      display:block;
+      margin: 1rem auto;
+      font-size: 17rem;
+      text-align:center;
+    }
+    img{
+      display: block;
+      margin: 1rem auto;
+      width: 17rem;
+      text-align:center;
+    }
+  }
+  .button{
+    width: 17rem;
+  }
+}
+.user-role{
+  font-size: 1.03rem;
+  font-weight: 400;
+  padding: 0.7rem 0.5rem;
+  border-radius: 0.2rem;
+  color: #000;
+  border: 1px solid transparent;
+  width: 100%;
+  background: rgba(255,255,255,0.2);
+  cursor: default;
+}

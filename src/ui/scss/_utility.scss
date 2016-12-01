@@ -1,0 +1,121 @@
+.clr {
+  &:after {
+     visibility: hidden;
+     display: block;
+     font-size: 0;
+     content: " ";
+     clear: both;
+     height: 0;
+   }
+}
+
+
+.round-icon-btn {
+  color: #FFF;
+  display: inline-block;
+  text-align: center;
+  line-height: 3rem;
+  border-radius: 50%;
+  font-size: 1.1rem;
+  cursor: pointer;
+  width: 3rem;
+  height: 3rem;
+  i {
+    position: relative;
+    left: 1px;
+    top: 1px;
+  }
+}
+
+.icon-btn {
+  border: 4px solid $text-grey;
+  display: inline-block;
+  border-radius: .4rem;
+  padding: .4rem .5rem;
+
+  i {
+    position: relative;
+    right:1px;
+    top:1px;
+  }
+
+  &:hover {
+    background: $text-grey;
+  }
+
+  &.green-icon {
+    color: $icon-green;
+  }
+
+  &.blue-icon {
+    color: $accent-blue;
+  }
+}
+
+.button {
+  padding: .5rem 1.5rem;
+  font-size: .75rem;
+  text-align: center;
+  border-radius: .5rem;
+  border:none;
+  background:$button-blue;
+  color: #FFF;
+  letter-spacing: .03rem;
+  cursor: pointer;
+
+
+
+
+
+  &.green-btn{
+    background: $icon-green;
+  }
+  &.red-btn{
+    background: $icon-red;
+  }
+  &.yellow-btn{
+    background: $icon-yellow;
+  }
+
+  &:hover,
+  &.disabled,
+  &:disabled{
+    color: $text-grey;
+    background: $button-hover;
+  }
+  &.disabled,
+  &:disabled{
+    cursor: not-allowed;
+  }
+}
+
+.button + .button{
+  margin-right: 0.5rem;
+}
+
+.truncate {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.blue-btn {
+  background: $accent-blue;
+
+  &:hover {
+    background: $inactive-blue;
+    box-shadow: inset 0px 0px 3px rgba(0,0,0,.7)
+  }
+}
+
+
+.inline-select-els {
+  .label {
+    display: block;
+  }
+  .radio-el,
+  .checkbox-el {
+    display: inline-block;
+    margin-right: 10px;
+  }
+}
