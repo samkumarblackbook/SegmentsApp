@@ -1,0 +1,19 @@
+
+.task-item {
+  color: $base-grey;
+  text-align: center;
+  display: block;
+  cursor: pointer;
+  padding: 1.4rem 0;
+  font-weight: 300;
+
+  &:hover,
+  &.active{
+    background: $midnight-blue;
+  }
+}
+
+.add-task-btn-holder {
+  padding-top:1.5rem;
+  text-align: center;
+}

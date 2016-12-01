@@ -1,0 +1,243 @@
+textarea,
+input[type="text"],
+input[type="password"],
+input[type="number"],
+select {
+  font-size: 1.03rem;
+  font-weight: 400;
+  padding: .7rem .5rem;
+  border-radius: .2rem;
+  color: #000;
+  border: 1px solid transparent;
+  background: $text-input;
+  width:100%;
+
+  &::-webkit-input-placeholder {
+  color: $text-grey;
+  }
+  &::-moz-placeholder {
+    color: $text-grey;
+  }
+  &:-ms-input-placeholder {
+    color: $text-grey;
+  }
+  &:-moz-placeholder {
+    color: $text-grey;
+  }
+
+  &:disabled {
+    background: rgba(255,255,255,.2);
+    cursor: default;
+  }
+
+  &.ng-invalid.ng-dirty {
+    border-color:red;
+    &::-webkit-input-placeholder {
+    color: red;
+    }
+    &::-moz-placeholder {
+      color: red;
+    }
+    &:-ms-input-placeholder {
+      color: red;
+    }
+    &:-moz-placeholder {
+      color: red;
+    }
+  }
+}
+
+error-msg{
+  color: red;
+  margin-left: 1rem;
+}
+
+textarea {
+  max-width: 100%;
+  min-height: 7rem;
+}
+
+
+select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  cursor: pointer;
+  width:100%;
+  border: none;
+  font-weight: 300;
+  background-color: $select-base;
+  background-image: url('../assets/images/sort.svg');
+  background-position: right 0px top 50%;
+  background-repeat: no-repeat;
+  background-size: 2rem 1.5rem;
+  min-width: 100px;
+  padding-right: 30px;
+  color: #FFF;
+}
+
+label,
+.label {
+  display: inline-block;
+  color:$text-grey;
+  font-weight: 600;
+  font-size: .94rem;
+  padding-bottom: .2rem;
+}
+
+input[type="radio"] ,
+input[type="checkbox"] {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}
+
+input[type="radio"] + .radio-label,
+input[type="checkbox"] + .checkbox-label{
+  display: block;
+  line-height: 1.3rem;
+  font-size:.95rem;
+  font-weight: normal;
+}
+
+input[type="radio"] + .radio-label:before,
+input[type="checkbox"] + .checkbox-label:before {
+  content: '';
+  display: inline-block;
+  width: 1.5rem;
+  height: 1.5rem;
+  margin-right: 0.5rem;
+  vertical-align:-0.48rem;
+  background-color:$text-input;
+  border: 1px solid $text-grey;
+}
+
+input[type="checkbox"] + .checkbox-label:before,
+input[type="radio"] + .radio-label:before  {
+  border-radius: .2rem;
+}
+
+
+input[type="radio"]:checked + .radio-label:before,
+input[type="checkbox"]:checked  + .checkbox-label:before  {
+  background-color:$icon-green;
+  border: 1px solid $icon-green;
+}
+
+input[type="radio"]:checked  + .radio-label:after,
+input[type="checkbox"]:checked  + .checkbox-label:after {
+  content: "\ea10";
+  @include icomoon;
+  font-size: 1rem;
+  position: absolute;
+  color: #FFF;
+  left: .3rem;
+  top: .31rem;
+}
+
+input[type="radio"]:focus {
+ // color: $input-blue;
+}
+
+.row .form-sub-head{
+  padding-bottom: 0.3rem;
+  border-bottom: 3px solid $midnight-blue;
+  font-size: 1.2rem;
+  padding: 0.3rem;
+  color: $midnight-blue;
+}
+
+.radio-el,
+.checkbox-el {
+  text-align: left;
+  display: block;
+  cursor: pointer;
+  font-size: .8rem;
+  position: relative;
+}
+
+.checkbox-el.hollow {
+
+  input[type="checkbox"] + .checkbox-label:before {
+    border: 1px solid #FFF;
+    background: none;
+    border-radius: 0px;
+    width: 1rem;
+    height: 1rem;
+    vertical-align: -0.218rem;
+  }
+
+  input[type="checkbox"] + .checkbox-label{
+    line-height: 1rem;
+    font-size:.9rem;
+  }
+
+  input[type="checkbox"]:checked  + .checkbox-label:before  {
+    background:$icon-green;
+  }
+
+  input[type="checkbox"]:checked  + .checkbox-label:after {
+    font-size: .8rem;
+    left: .2rem;
+    top: .22rem;
+  }
+
+  .checkbox-label {
+    color:#FFF;
+  }
+}
+
+input[type="radio"]:disabled + .radio-label:before,
+input[type="checkbox"]:disabled  + .checkbox-label:before  {
+  // background-color:$light-grey;
+  // color:$mid-grey;
+  // border: 1px solid $mid-grey;
+}
+
+
+input[type="checkbox"]:disabled  + .checkbox-label:after {
+  // color: $dark-grey;
+}
+
+.image-upload > input[type="file"]{
+  display: none;
+}
+.full-width{
+  .error-message{
+    display:none;
+  }
+}
+
+.input-wrapper.error{
+  label{
+    color: $icon-red;
+  }
+  .error-message{
+    display:inline-block;
+    color: $icon-red;
+    position:relative;
+    left: 1rem;
+    font-size: 0.8rem;
+  }
+  input{
+    border: 1px solid $icon-red;
+    color: $icon-red;
+    &::-webkit-input-placeholder{
+      color: $icon-red;
+    }
+    &:-moz-placeholder{
+      color: $icon-red;
+    }
+    &::-moz-placeholder{
+      color: $icon-red;
+    }
+    &:-ms-input-placeholder{
+      color: $icon-red;
+    }
+  }
+}
