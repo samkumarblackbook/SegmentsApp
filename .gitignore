@@ -1,0 +1,4 @@
+src/docker/dockerBuild/
+.vscode/
+.idea/
+.env
