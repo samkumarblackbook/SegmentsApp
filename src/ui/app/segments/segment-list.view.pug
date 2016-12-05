@@ -1,0 +1,9 @@
+.main-content.no-left-menu((click)="closeDropMenus($event.target)")
+  .main-content-section
+    h1.page-title.clr
+      span.title Segment List
+    .main-content-body
+      div.test
+      .grid-frame-overflow((window:resize)="onResize($event)")
+        .gridframe
+          ag-grid-ng2.custom-grid-styles(#aggrid='', style='width: 100%; height: 500px;', [gridOptions]='gridOptions')

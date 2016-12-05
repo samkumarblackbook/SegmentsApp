@@ -1,0 +1,41 @@
+.main-content.no-left-menu
+  .main-content-section
+    h1.page-title.clr
+      span.title(*ngIf="isNewVehicle") Add New Vehicle
+      span.title(*ngIf="!isNewVehicle") Edit Vehicle Details
+      span.title(*ngIf="!isNewVehicle") View Vehicle Details
+    .main-content-body
+      .main-content-subhead(*ngIf="!isNewVehicle")
+        button.button(*ngIf="canEdit", (click)="editVehicle()",[disabled]="!isReadOnly") Edit
+      form.main-content-form
+        form.col.half.vehicle-form([formGroup]="vehicleForm",(submit)="saveVehicle()")
+          .row
+            .form-sub-head Vehicle Details
+          .row
+            .input-wrapper
+              label Name
+              //error-msg([control]="vehicleForm.controls.name")
+              input(type="text",placeholder="Vehicle Name", formControlName="name")
+          .row
+            .input-wrapper
+              label Make
+              //error-msg([control]="vehicleForm.controls.make")
+              input(type="text",placeholder="Vehicle Make", formControlName="make")
+          .row
+            .input-wrapper
+              label Model
+              //error-msg([control]="vehicleForm.controls.model")
+              input(type="text", placeholder="Vehicle Model", formControlName="model")
+          .row
+            .input-wrapper
+              label Year
+              //error-msg([control]="vehicleForm.controls.year")
+              input(type="number", placeholder="Year", formControlName="year")
+
+          .bottom-button-row
+            .col.full-width
+              button.button.red-btn.pull-right((click)="goBack()") Cancel
+              button.button.yellow-btn.pull-right((click)="resetForm()") Reset
+              button.button.green-btn.pull-right(type="submit", [disabled]="!vehicleForm.valid") Save
+
+

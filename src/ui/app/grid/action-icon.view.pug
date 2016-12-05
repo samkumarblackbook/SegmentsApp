@@ -1,0 +1,13 @@
+.action-cell-wrapper
+  .icon-cog.parent((click)="openDropDown($event.target)", [class.active]="dropIsOpen")
+    ul.action-menu
+      li.action-menu-item
+        .action-menu-link((click)="viewUser()") View
+      li.action-menu-item(*ngIf="canEdit")
+        a.action-menu-link((click)="editUser()") Edit
+      li.action-menu-item(*ngIf="canEdit")
+        a.action-menu-link((click)="deleteUser()") Delete
+      li.action-menu-item(*ngIf="user.active && canEdit")
+        a.action-menu-link((click)="toggleActivateUser()") Deactivate
+      li.action-menu-item(*ngIf="!user.active && canEdit")
+        a.action-menu-link((click)="toggleActivateUser()") Activate

@@ -6,6 +6,7 @@ import { AgGridModule } from 'ag-grid-ng2/main';
 import { HttpModule }    from '@angular/http';
 import { AppComponent } from './app.component';
 import { AppRoutingModule, routingComponents } from './routes.module';
+import { SegmentService } from './segments/segment.services';
 
 @NgModule({
   imports: [
@@ -17,7 +18,7 @@ import { AppRoutingModule, routingComponents } from './routes.module';
     AppRoutingModule
   ],
   declarations: [...routingComponents],
-  providers: [  ],
+  providers: [ SegmentService  ],
   bootstrap: [ AppComponent ]
 })
 export class AppModule {
